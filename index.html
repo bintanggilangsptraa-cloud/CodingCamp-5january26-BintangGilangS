@@ -5,18 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Todo list Star</title>
     <!-- css external -->
-    <link rel=""stylesheed href="css\style.css">
+    <link rel="stylesheet" href="css\style.css">
 
 </head>
 <body>
     <!-- headernya -->
-<header></header>
+<header>
+    <h1 style="color:red;">To do List website - Bintang</h1>
+</header>
 <!-- mainya -->
-<main></main>
+<main>
+    
+    <section>
+        
+        <!-- ini untuk dark mode -->
+         <button id="darkModeBtn" type="button">🌙 Dark Mode</button>
+
+       <!-- Form input -->
+    <form id="todo-form">
+        <input class="body rounded p-2" type="text" id="todo-input" placeholder="Enter todo" required>
+        <input class="body rounded p-2" type="date" id="todo-date" required>
+        <button type="submit">Add</button> 
+    </form>
+<!-- tempat menampilkan to do -->
+ <table Border="1" cellpadding="8" cellspacing="0">
+        <thead>
+            <tr>
+                <th>No</th>
+                <th>To do</th>
+                <th>Tanggal</th>
+                <th>Aksi</th>
+            </tr>
+        </thead>
+        <tbody id="todo-list">
+                <!-- Data akan muncul disini -->
+
+        </tbody>
+ </table>
+
+        
+    </section>
+</main>
 <!-- foternya -->
-<foter></foter>
+<footer></footer>
     <!-- js external -->
-    <script src="js/scrip.js"></script>
+    <script src="js/script.js,"></script>
 </body>
 
 
