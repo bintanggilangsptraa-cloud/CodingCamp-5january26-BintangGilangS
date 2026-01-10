@@ -1,0 +1,136 @@
+/* RESET */
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* DARK MODE DEFAULT */
+body {
+    background-color: #0f172a;
+    color: #e5e7eb;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* CONTAINER */
+.container {
+    background-color: #020617;
+    padding: 20px;
+    width: 100%;
+    max-width: 700px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+}
+
+/* HEADER */
+header h1 {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #60a5fa; /* biru halus */
+}
+
+/* DARK MODE BUTTON */
+#darkModeBtn {
+    background-color: #1e3a8a;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+#darkModeBtn:hover {
+    background-color: #2563eb;
+}
+
+/* FORM */
+#todo-form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#todo-form input,
+#todo-form button {
+    padding: 8px;
+    border-radius: 8px;
+    border: none;
+}
+
+#todo-input,
+#todo-date {
+    flex: 1;
+}
+
+#todo-form button {
+    background-color: #3b82f6;
+    color: white;
+    cursor: pointer;
+}
+
+#todo-form button:hover {
+    background-color: #2563eb;
+}
+
+/* TABLE */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+thead {
+    background-color: #1e40af;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: center;
+}
+
+tbody tr {
+    background-color: #020617;
+    border-bottom: 1px solid #1e293b;
+}
+
+/* DELETE BUTTON */
+.delete-btn {
+    background-color: #ef4444;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    background-color: #dc2626;
+}
+
+/* LIGHT MODE */
+body.light {
+    background-color: #f1f5f9;
+    color: #020617;
+}
+
+body.light .container {
+    background-color: white;
+}
+
+body.light thead {
+    background-color: #3b82f6;
+}
+
+body.light tbody tr {
+    background-color: white;
+}
+
+
+
+

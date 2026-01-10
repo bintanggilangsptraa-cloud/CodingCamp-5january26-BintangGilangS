@@ -4,54 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Todo list Star</title>
+
     <!-- css external -->
-    <link rel="stylesheet" href="css\style.css">
-
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <!-- headernya -->
 <header>
-    <h1 style="color:red;">To do List website - Bintang</h1>
+    <h1>To do List website - Bintang</h1>
 </header>
-<!-- mainya -->
+
 <main>
-    
-    <section>
-        
-        <!-- ini untuk dark mode -->
-         <button id="darkModeBtn" type="button">🌙 Dark Mode</button>
+    <section class="container">
 
-       <!-- Form input -->
-    <form id="todo-form">
-        <input class="body rounded p-2" type="text" id="todo-input" placeholder="Enter todo" required>
-        <input class="body rounded p-2" type="date" id="todo-date" required>
-        <button type="submit">Add</button> 
-    </form>
-<!-- tempat menampilkan to do -->
- <table Border="1" cellpadding="8" cellspacing="0">
-        <thead>
-            <tr>
-                <th>No</th>
-                <th>To do</th>
-                <th>Tanggal</th>
-                <th>Aksi</th>
-            </tr>
-        </thead>
-        <tbody id="todo-list">
-                <!-- Data akan muncul disini -->
+        <!-- tombol dark mode -->
+        <button id="darkModeBtn" type="button">🌙 Dark Mode</button>
 
-        </tbody>
- </table>
+        <!-- Form input -->
+        <form id="todo-form">
+            <input type="text" id="todo-input" placeholder="Enter todo" required>
+            <input type="date" id="todo-date" required>
+            <button type="submit">Add</button>
+        </form>
 
-        
+        <!-- tabel todo -->
+        <table>
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>To do</th>
+                    <th>Tanggal</th>
+                    <th>Aksi</th>
+                </tr>
+            </thead>
+            <tbody id="todo-list">
+                <!-- Data muncul di sini -->
+            </tbody>
+        </table>
+
     </section>
 </main>
-<!-- foternya -->
+
 <footer></footer>
-    <!-- js external -->
-    <script src="js/script.js,"></script>
+
+<!-- js external -->
+<script src="script.js"></script>
 </body>
-
-
-
 </html>
